@@ -4,8 +4,15 @@ cd ~/Desktop/LAB || exit
 
 git add .
 
-DATE=$(date '+%Y-%m-%d %H:%M:%S')
+if git diff --cached --quiet; then
+    echo "Nothing to commit"
+else
+    DATE=$(date '+%Y-%m-%d %H:%M:%S')
+    git commit -m "auto update $DATE"
+fi
 
-git commit -m "daily update $DATE"
+git pull origin main --rebase
 
 git push origin main
+
+echo "LAB synced 🚀"
