@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, 500); // match transition duration
             }, 800); // brief pleasant delay to show off preloader design
         });
-        
+
         // Safety Fallback (if window load is slow or blocked)
         setTimeout(() => {
             preloader.style.opacity = '0';
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', () => {
         const scrollY = window.scrollY;
-        
+
         // Sticky Header Toggle
         if (scrollY > 50) {
             header.classList.add('sticky');
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', () => {
                 mobileToggle.classList.remove('active');
                 navMenu.classList.remove('open');
-                
+
                 // Set active link visually on click
                 navLinks.forEach(nl => nl.classList.remove('active'));
                 link.classList.add('active');
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetPane = document.getElementById(targetTab);
             if (targetPane) {
                 targetPane.classList.add('active');
-                
+
                 // Re-trigger reveal animations inside the newly opened tab pane
                 const revealsInPane = targetPane.querySelectorAll('.reveal-item');
                 revealsInPane.forEach(item => {
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let current = 0;
             const duration = 2000; // 2 seconds
             const increment = target / (duration / 16); // ~60fps
-            
+
             const updateCount = () => {
                 current += increment;
                 if (current < target) {
@@ -137,14 +137,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     counter.innerText = target;
                 }
             };
-            
+
             updateCount();
         });
     };
 
     // 6. SCROLL REVEAL OBSERVER (INTERSECTION OBSERVER)
     const revealItems = document.querySelectorAll('.reveal-item');
-    
+
     if ('IntersectionObserver' in window) {
         // Element Reveals Observer
         const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -191,9 +191,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const toast = document.createElement('div');
         toast.className = `toast ${type}`;
-        
-        const icon = type === 'success' 
-            ? '<i class="fa-solid fa-circle-check"></i>' 
+
+        const icon = type === 'success'
+            ? '<i class="fa-solid fa-circle-check"></i>'
             : '<i class="fa-solid fa-circle-exclamation"></i>';
 
         toast.innerHTML = `
@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm && submitBtn) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
+
             // Add visual submitting state
             submitBtn.classList.add('submitting');
             submitBtn.setAttribute('disabled', 'true');
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Clear loading state
                 submitBtn.classList.remove('submitting');
                 submitBtn.removeAttribute('disabled');
-                
+
                 // Clear form fields
                 contactForm.reset();
 
@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 9. DYNAMIC NAVIGATION ACTIVE STATE ON SCROLL
     const sections = document.querySelectorAll('section[id]');
-    
+
     window.addEventListener('scroll', () => {
         const scrollPosition = window.scrollY + 100; // offset header height
 

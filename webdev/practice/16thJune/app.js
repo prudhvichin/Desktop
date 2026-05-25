@@ -290,3 +290,45 @@ marks = [90, 98, 95, 96, 97, 91, 80, 89, 87, 86, 82]
 
 
 //======================================================================================
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+let total = numbers.reduce((accumlator, currentValue) => (accumlator + currentValue))
+
+const prices = [99.50, 0.99, 59.99, 9.99, 69.99, 49.99, 39.50]
+
+//we can use it for filtering stuff but it reduces it overtime
+
+
+// let lowerstPrice = prices.reduce((min, max) => {
+//     if (max > min) {
+//         return min
+//     }
+//     return max
+// })
+
+
+
+
+const nStrings = ['prudhvi raj', 'praveen', 'tarun', 'ashok', 'ganesh', 'hemanth']
+
+
+const longestName = nStrings.reduce((longest, currentValue) => {
+    return currentValue.length > longest.length ? currentValue : longest
+})
+
+// =====================================================================================
+// Arrow function and this keyword are varry from function to function
+
+
+const person = {
+    firstName: 'prudhvi',
+    lastName: "raj",
+
+    fullName: () => {
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+
+
+
