@@ -331,4 +331,115 @@ const person = {
 }
 
 
+// ===========================================================================================
+// default parameters or Arguments
 
+
+
+function rolldie(num = 6) {
+    return Math.floor(Math.random() * num) + 1
+}
+
+
+
+function greet(name, msg = 'hey there', punc = '!') {
+
+    console.log(` ${msg},${name}${punc}`)
+}
+
+
+// ===================================================================
+
+// spread
+
+
+const max = Math.max(87, 845, 487, 48, 784, 848, 4, 84, 84, 88)
+
+console.log(max)
+
+
+
+const student1 = {
+    name: 'prudhvi',
+    age: 25,
+    color: 'tan'
+}
+
+
+const student2 = {
+    name: 'prudhvi',
+    age: 25,
+    color: 'fair'
+}
+
+const student = { ...student2, ...student1 }
+//here student1 attributes will override the student2 
+
+
+const obj = { ...[2, 3, 4, 5, 6] }
+// here the index will become the key for the obj
+
+const obj1 = { ...'hello' }
+//  similarly here also
+
+
+
+const dataFromForm = {
+    name: 'prudhvi',
+    age: 25,
+    username: 'kites'
+}
+
+const newUser = { ...dataFromForm, id: '454811', isAdmin: false }
+
+
+// ===================================================================
+// rest
+
+function sum(...nums) {
+    return nums.reduce((total, ele) => total + ele)
+}
+
+
+function awards(gold, silver, ...rest) {
+    console.log(`Gold medal goes to ${gold}`)
+    console.log(`Silver medal goes to ${silver}`)
+    console.log(`and rest are ${rest}`)
+}
+
+
+//======================================================================
+
+// array destructring
+
+
+const studs = [
+    {
+        name: 'prudhvi',
+        rank: 1
+    },
+    {
+        name: 'praveen',
+        rank: 2
+    },
+    {
+        name: 'radha',
+        rank: 3
+    },
+    {
+        name: 'vinay',
+        rank: 4
+    },
+    {
+        name: 'padma',
+        rank: 5
+    },
+    {
+        name: 'manasa',
+        rank: 6
+    }
+]
+
+
+
+const [istRank, iindRank, ...others] = studs
