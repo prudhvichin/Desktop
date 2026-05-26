@@ -1,26 +1,10 @@
-import './App.css'
-import Message from './Message'
-import Dog from './Dog'
+import { ActivityCalendar } from 'react-activity-calendar'
 
 function App() {
   return (
-    <div className='App'>
-      <Message />
-      <Dog />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-
-    </div>
+    <ActivityCalendar
+      data={[]}
+    />
   )
 }
 
