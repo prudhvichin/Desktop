@@ -47,7 +47,7 @@ const About = () => {
             </div>
             <div className="highlight-item">
               <span className="highlight-icon">🤖</span>
-              <span>Bash & Py System Scripting</span>
+              <span>Bash System Scripting</span>
             </div>
           </div>
         </div>
