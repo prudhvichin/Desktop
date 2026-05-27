@@ -1,0 +1,24 @@
+.github-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.github-card {
+  width: 100%;
+  max-width: 900px;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.calendar-wrapper {
+  min-width: 750px;
+  padding: 1rem;
+}
+
+/* Customizing the react-github-calendar */
+.react-activity-calendar {
+  color: var(--text-primary) !important;
+  font-family: var(--font-sans);
+}
