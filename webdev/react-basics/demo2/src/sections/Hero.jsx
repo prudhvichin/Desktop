@@ -8,54 +8,56 @@ import './Hero.css';
 
 const Hero = () => {
   const roles = [
-    "Full Stack Developer",
-    "Systems Programmer",
-    "UI/UX Enthusiast",
-    "Problem Solver"
+    "Front Developer",
+    "Python Programmer",
+    "Linux Enthusiast",
+    "Problem Solver",
+    "Game Developer"
+
   ];
-  
+
   const currentRole = useTypewriter(roles);
 
   return (
     <section id="home" className="hero-section">
       <ParticleBackground />
-      
+
       <div className="container hero-content">
         <p className="greeting animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           Hi, my name is
         </p>
-        
+
         <h1 className="name animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-          Dev Name.
+          Prudhvi Raj Chintada
         </h1>
-        
+
         <h2 className="role animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           I'm a <span className="typewriter">{currentRole}</span>
           <span className="cursor"></span>
         </h2>
-        
+
         <p className="description animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
-          I build exceptional digital experiences from frontend to backend. 
-          Specializing in React, Python, and C++, I love turning complex problems 
+          I build exceptional digital experiences from frontend to backend.
+          Specializing in React, Python, and C++, I love turning complex problems
           into elegant, performant solutions.
         </p>
-        
+
         <div className="cta-group animate-fade-in-up" style={{ animationDelay: '1s' }}>
-          <Button href="/resume.pdf" download="Resume.pdf">
+          <Button href="/resume.pdf" download="Prudhvi-raj.pdf">
             <FaDownload /> Download Resume
           </Button>
-          <Button href="https://github.com" variant="outline">
+          <Button href="https://github.com/prudhvichin" variant="outline">
             <FaGithub size={20} />
           </Button>
-          <Button href="https://linkedin.com" variant="outline">
+          <Button href="https://www.linkedin.com/in/prudhvi-raj-chintada-57607515a/" variant="outline">
             <FaLinkedin size={20} />
           </Button>
-          <Button href="mailto:contact@example.com" variant="outline">
+          <Button href="mailto:prudhvisam4444@gmail.com" variant="outline">
             <FaEnvelope size={20} />
           </Button>
         </div>
       </div>
-      
+
       <div className="scroll-indicator animate-fade-in" style={{ animationDelay: '1.5s' }}>
         <Link to="about" smooth={true} duration={500}>
           <div className="mouse">

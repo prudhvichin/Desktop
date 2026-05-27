@@ -9,19 +9,16 @@ const Footer = () => {
     <footer className="footer glass-panel">
       <div className="container footer-container">
         <div className="footer-socials">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
+          <a href="https://github.com/prudhvichin" target="_blank" rel="noopener noreferrer" className="social-link">
             <FaGithub size={20} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
+          <a href="https://www.linkedin.com/in/prudhvi-raj-chintada-57607515a/" target="_blank" rel="noopener noreferrer" className="social-link">
             <FaLinkedin size={20} />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link">
-            <FaTwitter size={20} />
-          </a>
         </div>
-        
+
         <div className="footer-text">
-          <p>Designed & Built by Dev Name</p>
+          <p>Designed & Built by Prudhvi raj Chintada</p>
           <p className="copyright">© {currentYear} All rights reserved.</p>
         </div>
       </div>
