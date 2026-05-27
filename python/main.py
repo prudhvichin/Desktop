@@ -94,3 +94,98 @@
 #     return result
 
 # print(remove_duplicates(li))
+
+
+
+# =====================================================================
+# FIND FACTORIAL
+
+# def factorial(n):
+#     result = 1
+#     for i in range(1,n+1):
+#         result *=i
+
+#     return result
+
+# def factorialResult(n):
+#     result = 1
+#     for i in range(1,n+1):
+#         result *=i
+#     return result
+
+
+#
+
+def count_vowels(s):
+    vowels = "aeiou"
+    count = 0
+    for char in vowels:
+        if char in s:
+            count +=1
+    return count
+
+
+def largestNumber(arr):
+    largest = 0
+    for i in arr:
+        if largest < i:
+            largest = i
+
+    return largest
+
+
+
+
+x = [12,1,1,1,1]
+
+def fibonacci(limit):
+    a,b = 0,1
+    for i in range(limit):
+        print(a)
+        temp = a
+        a = b
+        b = temp+b
+
+
+# fibonacci(13)
+
+
+def remove_duplicates(li):
+    unique = []
+
+    for i in li:
+        if i not in unique:
+            unique.append(i)
+    return unique
+
+
+# print(remove_duplicates([1,1,1,2]))
+
+def find_factorial(n):
+    result = 1
+    for i in range(1,n+1):
+        result *=i
+    return result
+
+
+# print(find_factorial(5))
+
+
+# def two_sum(nums, target):
+#     for i in range(len(nums)):
+#         for j in range(i + 1, len(nums)):
+#             if nums[i] + nums[j] == target:
+#                 return [i, j]
+
+
+
+def two_sum(nums,target):
+    for i in range(len(nums)):
+        for j in range(i+1,len(nums)):
+            if nums[i] + nums[j] == target:
+                return[i,j]
+
+nums = [2, 7, 11, 15]
+
+print(two_sum(nums, 9))
+    
