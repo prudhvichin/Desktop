@@ -185,7 +185,27 @@ def two_sum(nums,target):
             if nums[i] + nums[j] == target:
                 return[i,j]
 
-nums = [2, 7, 11, 15]
+nums = [2, 4,7, 11, 15]
 
 print(two_sum(nums, 9))
+
+# def longest_substring(s):
+#     seen = set()
+#     left = 0
+#     max_length = 0
+
+#     for right in range(len(s)):
+
+#         while s[right] in seen:
+#             seen.remove(s[left])
+#             left += 1
+
+#         seen.add(s[right])
+
+#         max_length = max(max_length, right - left + 1)
+
+#     return max_length
+
+
+# print(longest_substring("abcabcbb"))
     
