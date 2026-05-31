@@ -355,7 +355,7 @@ function greet(name, msg = 'hey there', punc = '!') {
 
 const max = Math.max(87, 845, 487, 48, 784, 848, 4, 84, 84, 88)
 
-console.log(max)
+// console.log(max)
 
 
 
@@ -443,3 +443,39 @@ const studs = [
 
 
 const [istRank, iindRank, ...others] = studs
+
+// ==========================================================================================
+
+// object destructing
+
+const myProfile = {
+    firstName: 'Prudhvi',
+    lastName: 'Chintada',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    gender: 'm',
+    age: 25,
+    email: 'prudhvisam4444@gmail.com',
+    city: 'visakhapatnam'
+
+}
+
+// console.log(myProfile)
+
+// const { name, bio } = myProfile
+// const { name: newName } = myProfile
+
+
+const user2 = {
+    name: 'janshi',
+    age: 24,
+    gender: 'f',
+}
+
+
+const { name, age, city = 'visakhapatnam' } = user2 // here we can declare the default value
+
+
+function fullName({ firstName, lastName, addresss = 'Ramatakies', city }) {
+    return `${firstName} ${lastName} lives at ${addresss} ${city}`
+}
+
