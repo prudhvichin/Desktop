@@ -1,10 +1,9 @@
-import { ActivityCalendar } from 'react-activity-calendar'
+import './App.css'
+import Greeter from './components/Greeter'
 
 function App() {
   return (
-    <ActivityCalendar
-      data={[]}
-    />
+    <Greeter person="prudhvi praveen" />
   )
 }
 
