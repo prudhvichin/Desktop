@@ -116,35 +116,35 @@
 
 #
 
-def count_vowels(s):
-    vowels = "aeiou"
-    count = 0
-    for char in vowels:
-        if char in s:
-            count +=1
-    return count
+# def count_vowels(s):
+#     vowels = "aeiou"
+#     count = 0
+#     for char in vowels:
+#         if char in s:
+#             count +=1
+#     return count
 
 
-def largestNumber(arr):
-    largest = 0
-    for i in arr:
-        if largest < i:
-            largest = i
+# def largestNumber(arr):
+#     largest = 0
+#     for i in arr:
+#         if largest < i:
+#             largest = i
 
-    return largest
-
-
+#     return largest
 
 
-x = [12,1,1,1,1]
 
-def fibonacci(limit):
-    a,b = 0,1
-    for i in range(limit):
-        print(a)
-        temp = a
-        a = b
-        b = temp+b
+
+# x = [12,1,1,1,1]
+
+# def fibonacci(limit):
+#     a,b = 0,1
+#     for i in range(limit):
+#         print(a)
+#         temp = a
+#         a = b
+#         b = temp+b
 
 
 # fibonacci(13)
