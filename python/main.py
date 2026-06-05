@@ -179,15 +179,15 @@ def remove_duplicates(li):
 
 
 
-def two_sum(nums,target):
-    for i in range(len(nums)):
-        for j in range(i+1,len(nums)):
-            if nums[i] + nums[j] == target:
-                return[i,j]
+# def two_sum(nums,target):
+#     for i in range(len(nums)):
+#         for j in range(i+1,len(nums)):
+#             if nums[i] + nums[j] == target:
+#                 return[i,j]
 
-nums = [2, 4,7, 11, 15]
+# nums = [2, 4,7, 11, 15]
 
-print(two_sum(nums, 9))
+# print(two_sum(nums, 9))
 
 # def longest_substring(s):
 #     seen = set()
