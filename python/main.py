@@ -150,13 +150,13 @@
 # fibonacci(13)
 
 
-def remove_duplicates(li):
-    unique = []
+# def remove_duplicates(li):
+#     unique = []
 
-    for i in li:
-        if i not in unique:
-            unique.append(i)
-    return unique
+#     for i in li:
+#         if i not in unique:
+#             unique.append(i)
+#     return unique
 
 
 # print(remove_duplicates([1,1,1,2]))
