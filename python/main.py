@@ -161,11 +161,11 @@ def remove_duplicates(li):
 
 # print(remove_duplicates([1,1,1,2]))
 
-def find_factorial(n):
-    result = 1
-    for i in range(1,n+1):
-        result *=i
-    return result
+# def find_factorial(n):
+#     result = 1
+#     for i in range(1,n+1):
+#         result *=i
+#     return result
 
 
 # print(find_factorial(5))
