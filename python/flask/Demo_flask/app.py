@@ -1,19 +1,34 @@
-from flask import Flask
+from flask import Flask,redirect,url_for
 
 app = Flask(__name__)
 
 @app.route('/')
-def home():
-    return 'welcome to home'
-
-@app.route('/about')
-def about():
-    return 'this is about page'
+def Home_page():
+    return 'this is home page'
 
 
-@app.route('/<name>')
-def name(name):
-    return f'welcome {name}'
+@app.route('/about/<name>')
+def About(name):
+    return f'all about {name}'
 
-if __name__ == "__main__":
+@app.route('/admin')
+def Admin():
+    return "this is admin/owner page"
+
+@app.route('/owner')
+def Owner():
+    return redirect('/admin')
+
+@app.route('/user/<name>')
+def User(name):
+    if name=='admin' or name == 'prudhvi':
+        return redirect('/admin')
+    return f'welcome to user {name}'
+
+@app.route('/demoacc/<demo>')
+def demo(demo):
+    return redirect(url_for('User',name='prudhvi'))
+
+
+if __name__ == '__main__':
     app.run(debug=True)
