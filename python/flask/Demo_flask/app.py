@@ -27,7 +27,7 @@ def User(name):
 
 @app.route('/demoacc/<demo>')
 def demo(demo):
-    return redirect(url_for('User',name='prudhvi'))
+    return redirect(url_for('User',name=demo))
 
 
 if __name__ == '__main__':
