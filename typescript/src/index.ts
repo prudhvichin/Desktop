@@ -75,4 +75,27 @@ type user = {
 
 const user1 : user = { name : 'prudhvi', age : 25, description : 'hi this is prudhvi'}
 
-console.log(user1);
+
+
+type product = {
+    title : string,
+    inStock: boolean,
+    price : number
+}
+
+const  chair: product = { title : 'plastic chair',price : 26_00, inStock: false} 
+
+
+type employee = {
+
+    name? : string,
+
+    isOnboard: boolean,
+
+    salary: number
+
+}
+
+const employee1 : employee ={ isOnboard :true,salary : 10_000,}
+
+console.log(employee1);
