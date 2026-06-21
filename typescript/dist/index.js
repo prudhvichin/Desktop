@@ -31,5 +31,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 function add(a, b) {
     return 'hello world';
 }
-console.log(add(1, 2));
+function subtract(a, b) {
+    return a - b;
+}
+function divide(a, b) {
+    return a / b;
+}
+function square(a) {
+    return a * a;
+}
+console.log(square(2));
 //# sourceMappingURL=index.js.map

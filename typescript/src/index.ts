@@ -43,4 +43,16 @@ function add(a: number, b: number): string {
      return 'hello world'
 }
 
-console.log(add(1,2))
+function subtract(a:number,b:number): number {
+    return a-b;
+}
+
+function divide(a:number,b:number): number {
+    return a /b
+}
+
+function square(a:number,) : number {
+    return a*a
+}
+
+console.log(square(2))
