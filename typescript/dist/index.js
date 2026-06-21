@@ -5,19 +5,31 @@
 // let isMarried: boolean = false
 // let city: string = 'visakhapatnam'
 Object.defineProperty(exports, "__esModule", { value: true });
-// ARRAYS PRACTICE
-let nums = [1, 2, 3, 4, 5, 6];
-let grades = ['a', 'a+', 'b'];
-let fruits = ['mango', 'banana', 'apple', 'guava'];
-let marks = [89, 88, 97, 100, 90];
+// // ARRAYS PRACTICE
+// let nums: number[] = [1, 2, 3, 4, 5, 6]
+// let grades: Array<string> = ['a', 'a+', 'b']
+// let fruits: string[] = ['mango', 'banana', 'apple', 'guava']
+// let marks: number[] = [89, 88, 97, 100, 90]
 // OBJECTS
-let user = {
-    name: 'prudhvi',
-    age: 22
-};
-let product = {
-    title: 'books',
-    price: 89,
-    InStock: true,
-};
+// let user: {
+//     name: string;
+//     age: number;
+// } = {
+//     name: 'prudhvi',
+//     age: 22
+// }
+// let product: {
+//     title: string;
+//     price: number;
+//     InStock: boolean;
+// } = {
+//     title: 'books',
+//     price: 89,
+//     InStock: true,
+// }
+//FUNCTIONS
+function add(a, b) {
+    return 'hello world';
+}
+console.log(add(1, 2));
 //# sourceMappingURL=index.js.map

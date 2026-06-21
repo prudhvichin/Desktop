@@ -38,3 +38,9 @@
 
 
 //FUNCTIONS
+
+function add(a: number, b: number): string {
+     return 'hello world'
+}
+
+console.log(add(1,2))
