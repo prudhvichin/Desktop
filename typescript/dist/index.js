@@ -28,17 +28,20 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //     InStock: true,
 // }
 //FUNCTIONS
-function add(a, b) {
-    return 'hello world';
-}
-function subtract(a, b) {
-    return a - b;
-}
-function divide(a, b) {
-    return a / b;
-}
-function square(a) {
-    return a * a;
-}
-console.log(square(2));
+// function add(a: number, b: number): string {
+//      return 'hello world'
+// }
+// function subtract(a:number,b:number): number {
+//     return a-b;
+// }
+// function divide(a:number,b:number): number {
+//     return a /b
+// }
+// function square(a:number,) : number {
+//     return a*a
+// }
+// // console.log(square(2))
+//similarly arrow funcions
+const multiply = (a, b) => a * b;
+console.log(multiply(3, 3));
 //# sourceMappingURL=index.js.map

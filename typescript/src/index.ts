@@ -39,20 +39,28 @@
 
 //FUNCTIONS
 
-function add(a: number, b: number): string {
-     return 'hello world'
-}
+// function add(a: number, b: number): string {
+//      return 'hello world'
+// }
 
-function subtract(a:number,b:number): number {
-    return a-b;
-}
+// function subtract(a:number,b:number): number {
+//     return a-b;
+// }
 
-function divide(a:number,b:number): number {
-    return a /b
-}
+// function divide(a:number,b:number): number {
+//     return a /b
+// }
 
-function square(a:number,) : number {
-    return a*a
-}
+// function square(a:number,) : number {
+//     return a*a
+// }
 
-console.log(square(2))
+// // console.log(square(2))
+
+
+//similarly arrow funcions
+
+const multiply = (a:number, b:number):number => a*b 
+
+
+console.log(multiply(3,3));
