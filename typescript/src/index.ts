@@ -14,4 +14,16 @@ let fruits: string[] = ['mango', 'banana', 'apple', 'guava']
 
 let marks: number[] = [89, 88, 97, 100, 90]
 
-// 
+
+
+// OBJECTS
+let user: {
+    name: string;
+    age: number;
+
+} = {
+    name: 'prudhvi',
+    age: 22
+}
+
+
