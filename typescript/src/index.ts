@@ -58,9 +58,21 @@
 // // console.log(square(2))
 
 
-//similarly arrow funcions
 
-const multiply = (a:number, b:number):number => a*b 
+//similarly ARROW FUNCTION
+
+// const multiply = (a:number, b:number):number => a*b 
+// 
+// 
+// console.log(multiply(3,3));
 
 
-console.log(multiply(3,3));
+type user = {
+    name:string,
+    age: number,
+    description?: any,
+}
+
+const user1 : user = { name : 'prudhvi', age : 25, description : 'hi this is prudhvi'}
+
+console.log(user1);
