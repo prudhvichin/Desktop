@@ -8,20 +8,20 @@
 
 // const addNumbers = (a, b) => a + b;
 
-function rolldie(args) {
-    return Math.floor(Math.random() * args) + 1;
-}
+// function rolldie(args) {
+//     return Math.floor(Math.random() * args) + 1;
+// }
 
-// let die = rolldie(20);
+// // let die = rolldie(20);
 
-function rollingdies(times, dies) {
-    for (let i = times; i - 1 >= 0; i--) {
-        console.log(rolldie(dies));
-    }
-}
+// function rollingdies(times, dies) {
+//     for (let i = times; i - 1 >= 0; i--) {
+//         console.log(rolldie(dies));
+//     }
+// }
 
 
-
+// z
 
 // for (var i = 0; i < 5; i++) {
 //     var msg = "prudhvi"
